@@ -3,6 +3,8 @@ import './chatBox.css';
 import greendot from "../../assets/greenDot.png";
 import help from "../../assets/help.png";
 import profile from "../../assets/profile.png";
+import gallery from "../../assets/gallery_icon.png";
+import send from "../../assets/send.png";
 export const ChatBox = () => {
     return(
         <div className='chat-box'>
@@ -15,8 +17,9 @@ export const ChatBox = () => {
             <input type="text" placeholder='Send a message'/>
             <input type="file" id='image' accept='image/png, image/jpeg' hidden/>
             <label htmlFor="image">
-                <img src="" alt="" />
+                <img src={gallery} alt="" />
             </label>
+            <img src={send} alt=''/>
         </div>
         </div>
     )
